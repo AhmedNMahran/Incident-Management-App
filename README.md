@@ -46,12 +46,13 @@ This project leverages the following cutting-edge technologies:
 ## 📱 Screenshots
 
 <div align="center">
-<img src="screenshots/home.png" width="250" alt="home screen"/>
-<img src="screenshots/detail.png" width="250" alt="detail screen"/>
-<img src="screenshots/create.png" width="250" alt="create screen"/>
+
+<img src="screenshots/dashboard.png" width="250" alt="dashboard screen"/>
+<img src="screenshots/homescreen.png" width="250" alt="home screen"/>
+<img src="screenshots/details.png" width="250" alt="detail screen"/>
+<img src="screenshots/addNewTask.png" width="250" alt="create screen"/>
 <img src="screenshots/filter.png" width="250" alt="filter screen"/>
 <img src="screenshots/edit.png" width="250" alt="edit screen"/>
-<img src="screenshots/dashboard.png" width="250" alt="dashboard screen"/>
 </div>
 
 ## 🚀 Getting Started
