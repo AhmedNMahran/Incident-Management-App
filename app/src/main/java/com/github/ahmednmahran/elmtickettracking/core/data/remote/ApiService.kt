@@ -37,6 +37,9 @@ interface ApiService {
     @POST("buses/track-bus")
     suspend fun trackWorker(@Body trackingData: List<TrackingData>): Response<List<TrackingData>>
 
+    @GET("buses/track-bus")
+    suspend fun getTrackingData(): Response<List<TrackingData>>
+
     @GET("dashboard")
     suspend fun getDashboardStats(): Response<DashboardResponse>
 }

@@ -15,6 +15,13 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.github.ahmednmahran.elmtickettracking.core.common.formatDate
+import com.google.android.gms.maps.model.CameraPosition
+import com.google.android.gms.maps.model.LatLng
+import com.google.maps.android.compose.GoogleMap
+import com.google.maps.android.compose.Marker
+import com.google.maps.android.compose.MarkerState
+import com.google.maps.android.compose.rememberCameraPositionState
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -29,24 +36,24 @@ fun TrackingScreen(
         }
     ) { padding ->
         Box(modifier = Modifier.padding(padding)) {
-//            GoogleMap(
-//                modifier = Modifier.fillMaxSize(),
-//                cameraPositionState = rememberCameraPositionState {
-//                    position = CameraPosition.fromLatLngZoom(
-//                        LatLng(24.7136, 46.6753), // Default to Riyadh
-//                        12f
-//                    )
-//                }
-//            ) {
-//                // Add markers for tracking data
-//                state.stats.forEach { data ->
-//                    Marker(
-//                        state = MarkerState(position = LatLng(data.latitude, data.longitude)),
-//                        title = "Worker at ${data.time}",
-//                        snippet = "Bus: ${data.busNumber}"
-//                    )
-//                }
-//            }
+            GoogleMap(
+                modifier = Modifier.fillMaxSize(),
+                cameraPositionState = rememberCameraPositionState {
+                    position = CameraPosition.fromLatLngZoom(
+                        LatLng(24.7136, 46.6753), // Default to Riyadh
+                        12f
+                    )
+                }
+            ) {
+                // Add markers for tracking data
+                state.stats.forEach { data ->
+                    Marker(
+                        state = MarkerState(position = LatLng(data.latitude, data.longitude)),
+                        title = "Worker at ${data.trackingTime.formatDate()}",
+                        snippet = "Assigned Worker: ${data.assignedWorkerId}"
+                    )
+                }
+            }
 
             if (state.stats.isEmpty()) {
                 Box(

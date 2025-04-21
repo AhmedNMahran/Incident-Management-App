@@ -5,5 +5,6 @@ import com.github.ahmednmahran.elmtickettracking.features.tracking.data.model.Tr
 
 interface TrackingRepository {
     suspend fun trackWorker(trackingData: List<TrackingData>): Result<List<TrackingData>>
+    suspend fun getTrackingData(): Result<List<TrackingData>>
 
 }

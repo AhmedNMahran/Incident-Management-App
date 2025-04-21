@@ -21,4 +21,17 @@ class TrackingRepositoryImpl @Inject constructor(
             Result.Error(e)
         }
     }
+
+    override suspend fun getTrackingData(): Result<List<TrackingData>> {
+        return try {
+            val response = apiService.getTrackingData()
+            if (response.isSuccessful) {
+                Result.Success(response.body() ?: emptyList())
+            } else {
+                Result.Error(Exception(response.message()))
+            }
+        } catch (e: Exception) {
+            Result.Error(e)
+        }
+    }
 }
