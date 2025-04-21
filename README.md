@@ -6,6 +6,9 @@
 
 **Elm Ticket Tracking** is a modern Android application designed to simplify and enhance the process of managing incidents or tickets. Built using the latest Jetpack Compose UI toolkit and following clean architecture principles, this app provides a user-friendly and efficient way to track, filter, and update the status of incidents.
 
+**Note**
+The main focus of this project currently is to show a simple functionality with happy scenarios in most cases, focusing on having a good and scalable architecture that can be a building block to easily extend the app functionality
+
 ## ✨ Key Features
 
 *   **Incident Listing:** View a comprehensive list of all incidents with essential details like ID, description, creation date, and status.
@@ -16,16 +19,17 @@
 *   **Image Attachments:** Add images to incidents.
 *   **Modern UI:** Enjoy a clean, intuitive, and visually appealing user interface built with Jetpack Compose.
 * **Statistics**: Display an overview of the incidents using a Pie Chart.
+*   **Tracking using Google Maps:** Implement a feature to track the location of incidents on a map using Google Maps integration.
+*   **Unit Tests:** Add comprehensive unit tests to improve code reliability and maintainability.
 
 ## 🚧 Upcoming Features (TODOs)
 
 These features are planned for future development:
 
-*   **Tracking using Google Maps:** Implement a feature to track the location of incidents on a map using Google Maps integration.
-*   **Unit Tests:** Add comprehensive unit tests to improve code reliability and maintainability.
 *   **Comprehensive Documentation:** Enhance the code documentation to provide better clarity and guidance for developers.
 * **User Authentication**: Implement a login system to secure the application.
-* **Push Notifications**: Send push notifications to keep users updated about the status of their incidents.
+* **Attachment Preview**: In the future we should show the attached images of the incident, but now it's out of scope.
+* The Project is currently built on Postman mocked data
 
 ## 🛠️ Tech Stack
 
@@ -53,6 +57,7 @@ This project leverages the following cutting-edge technologies:
 <img src="screenshots/addNewTask.png" width="250" alt="create screen"/>
 <img src="screenshots/filter.png" width="250" alt="filter screen"/>
 <img src="screenshots/edit.png" width="250" alt="edit screen"/>
+<img src="screenshots/track.jpg" width="250" alt="track screen"/>
 </div>
 
 ## 🚀 Getting Started
@@ -73,6 +78,15 @@ Follow these steps to get the project running on your local machine:
 4.  **Run the App:**
     *   Connect an Android device or start an emulator.
     *   Click the "Run" button (green play icon) in Android Studio to run the app.
+
+5. **Google Maps API Key**
+    * This project has the feature of tracking incidents on a map using Google Maps.
+    * To use Google Maps you need to have a Google Maps API key.
+    * Create a Google Cloud project.
+    * Enable the Maps SDK for Android API.
+    * Create an API key and add restrictions (Android apps)
+    * In the root of your project, create a file named `secrets.properties` and add the line `MAPS_API_KEY="YOUR_API_KEY"` (Replace `YOUR_API_KEY` by the real key).
+    * The project is designed to read the api key from the `secrets.properties` file.
 
 ## 🤝 Contributing
 
