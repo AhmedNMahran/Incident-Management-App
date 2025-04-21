@@ -61,13 +61,14 @@ Follow these steps to get the project running on your local machine:
 
 1.  **Clone the Repository:**
 2.  **Open in Android Studio:**
-    *   Launch Android Studio.
+    *   Launch Android Studio ( the app was built using Android Studio Meerkat | 2024.3.1 Patch 1).
     *   Select "Open an existing Android Studio project."
     *   Navigate to the directory where you cloned the repository and select it.
 
 3.  **Build the Project:**
     *   Once the project is open, allow Gradle to sync.
     *   Go to `Build > Make Project` to build the project.
+    *   You might need to  go to `Build > Clean And Assemble Project ` or `Build > Assemble Project` 
 
 4.  **Run the App:**
     *   Connect an Android device or start an emulator.
