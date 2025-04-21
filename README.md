@@ -17,6 +17,16 @@
 *   **Modern UI:** Enjoy a clean, intuitive, and visually appealing user interface built with Jetpack Compose.
 * **Statistics**: Display an overview of the incidents using a Pie Chart.
 
+## 🚧 Upcoming Features (TODOs)
+
+These features are planned for future development:
+
+*   **Tracking using Google Maps:** Implement a feature to track the location of incidents on a map using Google Maps integration.
+*   **Unit Tests:** Add comprehensive unit tests to improve code reliability and maintainability.
+*   **Comprehensive Documentation:** Enhance the code documentation to provide better clarity and guidance for developers.
+* **User Authentication**: Implement a login system to secure the application.
+* **Push Notifications**: Send push notifications to keep users updated about the status of their incidents.
+
 ## 🛠️ Tech Stack
 
 This project leverages the following cutting-edge technologies:
@@ -64,7 +74,7 @@ Follow these steps to get the project running on your local machine:
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! If you'd like to help improve Elm Ticket Tracking, please follow these steps:
+I welcome contributions from the community! If you'd like to help improve Elm Ticket Tracking, please follow these steps:
 
 1.  Fork the repository.
 2.  Create a new branch (`git checkout -b feature/your-feature-name`).
