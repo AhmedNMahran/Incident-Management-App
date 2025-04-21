@@ -70,16 +70,7 @@ Follow these steps to get the project running on your local machine:
     *   Select "Open an existing Android Studio project."
     *   Navigate to the directory where you cloned the repository and select it.
 
-3.  **Build the Project:**
-    *   Once the project is open, allow Gradle to sync.
-    *   Go to `Build > Make Project` to build the project.
-    *   You might need to  go to `Build > Clean And Assemble Project ` or `Build > Assemble Project` 
-
-4.  **Run the App:**
-    *   Connect an Android device or start an emulator.
-    *   Click the "Run" button (green play icon) in Android Studio to run the app.
-
-5. **Google Maps API Key**
+3. **Google Maps API Key**
     * This project has the feature of tracking incidents on a map using Google Maps.
     * To use Google Maps you need to have a Google Maps API key.
     * Create a Google Cloud project.
@@ -87,6 +78,14 @@ Follow these steps to get the project running on your local machine:
     * Create an API key and add restrictions (Android apps)
     * In the root of your project, create a file named `secrets.properties` and add the line `MAPS_API_KEY="YOUR_API_KEY"` (Replace `YOUR_API_KEY` by the real key).
     * The project is designed to read the api key from the `secrets.properties` file.
+4.  **Build the Project:**
+    *   Once the project is open, allow Gradle to sync.
+    *   Go to `Build > Make Project` to build the project.
+    *   You might need to  go to `Build > Clean And Assemble Project ` or `Build > Assemble Project` 
+
+5.  **Run the App:**
+    *   Connect an Android device or start an emulator.
+    *   Click the "Run" button (green play icon) in Android Studio to run the app.
 
 ## 🤝 Contributing
 
