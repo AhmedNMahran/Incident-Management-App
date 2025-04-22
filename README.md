@@ -27,9 +27,9 @@ The main focus of this project currently is to show a simple functionality with 
 These features are planned for future development:
 
 *   **Comprehensive Documentation:** Enhance the code documentation to provide better clarity and guidance for developers.
-* **User Authentication**: Implement a login system to secure the application.
 * **Attachment Preview**: In the future we should show the attached images of the incident, but now it's out of scope.
 * The Project is currently built on Postman mocked data
+*  **Some Functionalities are not implemented yet**: like updating the ui after submitting a new incident, etc.
 
 ## 🛠️ Tech Stack
 
