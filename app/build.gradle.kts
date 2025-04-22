@@ -32,12 +32,17 @@ android {
     }
 
     buildTypes {
+        debug {
+            //...
+            buildConfigField( "String", "BASE_URL", "${project.property("MOCK_BASE_URL")}")
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField( "String", "BASE_URL", "${project.property("RELEASE_BASE_URL")}")
         }
     }
     compileOptions {
@@ -49,6 +54,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     // Enable KSP generated sources
     applicationVariants.all {
