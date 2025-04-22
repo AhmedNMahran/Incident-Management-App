@@ -51,7 +51,9 @@ fun AppNavHost(
                     navController.navigate(Screens.IncidentDetail.createRoute(id))
                 },
                 onFilterClick = { /* Handle filter */ },
-                onAddClick = { navController.navigate(Screens.NewIncident.route) }
+                onAddClick = {
+                    //currently we show the new incident dialog instead of navigating to the new incident screen
+                    navController.navigate(Screens.NewIncident.route) }
             )
         }
         

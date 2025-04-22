@@ -12,6 +12,6 @@ sealed class Screens(val route: String) {
     object IncidentDetail : Screens("incidents/{id}") {
         fun createRoute(id: String) = "incidents/$id"
     }
-    object NewIncident : Screens("incidents/new")
+    object NewIncident : Screens("incidents/new") // add a new incident screen to the project and use this to navigate
     object Tracking : Screens("tracking")
 }
