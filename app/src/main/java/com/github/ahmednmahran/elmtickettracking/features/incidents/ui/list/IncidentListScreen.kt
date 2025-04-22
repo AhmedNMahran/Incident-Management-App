@@ -1,4 +1,4 @@
-package com.github.ahmednmahran.elmtickettracking.features.incidents.ui
+package com.github.ahmednmahran.elmtickettracking.features.incidents.ui.list
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

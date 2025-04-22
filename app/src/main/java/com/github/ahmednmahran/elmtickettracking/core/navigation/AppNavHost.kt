@@ -9,8 +9,8 @@ import androidx.navigation.navArgument
 import com.github.ahmednmahran.elmtickettracking.features.auth.login.ui.LoginScreen
 import com.github.ahmednmahran.elmtickettracking.features.auth.otp.ui.OtpScreen
 import com.github.ahmednmahran.elmtickettracking.features.dashboard.ui.DashboardScreen
-import com.github.ahmednmahran.elmtickettracking.features.incidents.ui.IncidentDetailScreen
-import com.github.ahmednmahran.elmtickettracking.features.incidents.ui.IncidentListScreen
+import com.github.ahmednmahran.elmtickettracking.features.incidents.ui.details.IncidentDetailScreen
+import com.github.ahmednmahran.elmtickettracking.features.incidents.ui.list.IncidentListScreen
 import com.github.ahmednmahran.elmtickettracking.features.tracking.ui.TrackingScreen
 
 @Composable

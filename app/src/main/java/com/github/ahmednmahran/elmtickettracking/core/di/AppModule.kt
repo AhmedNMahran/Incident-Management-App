@@ -6,7 +6,7 @@ import com.github.ahmednmahran.elmtickettracking.core.data.remote.ApiService
 import com.github.ahmednmahran.elmtickettracking.core.data.remote.RetrofitClient
 import com.github.ahmednmahran.elmtickettracking.features.auth.domain.AuthRepository
 import com.github.ahmednmahran.elmtickettracking.features.auth.data.AuthRepositoryImpl
-import com.github.ahmednmahran.elmtickettracking.features.create.data.model.CreateIncidentRepositoryImpl
+import com.github.ahmednmahran.elmtickettracking.features.create.data.CreateIncidentRepositoryImpl
 import com.github.ahmednmahran.elmtickettracking.features.create.domain.CreateIncidentRepository
 import com.github.ahmednmahran.elmtickettracking.features.dashboard.domain.DashboardRepository
 import com.github.ahmednmahran.elmtickettracking.features.dashboard.data.DashboardRepositoryImpl

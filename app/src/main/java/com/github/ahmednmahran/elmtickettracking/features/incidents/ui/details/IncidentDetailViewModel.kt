@@ -1,4 +1,4 @@
-package com.github.ahmednmahran.elmtickettracking.features.incidents.ui
+package com.github.ahmednmahran.elmtickettracking.features.incidents.ui.details
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
@@ -11,7 +11,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 import com.github.ahmednmahran.elmtickettracking.core.common.Result
 import com.github.ahmednmahran.elmtickettracking.features.incidents.domain.IncidentDetailRepository
-import com.github.ahmednmahran.elmtickettracking.features.incidents.data.model.Incident
+import com.github.ahmednmahran.elmtickettracking.features.incidents.ui.details.model.IncidentDetailState
 
 @HiltViewModel
 class IncidentDetailViewModel @Inject constructor(
@@ -76,9 +76,3 @@ class IncidentDetailViewModel @Inject constructor(
         }
     }
 }
-
-data class IncidentDetailState(
-    val incident: Incident? = null,
-    val isLoading: Boolean = false,
-    val error: String? = null
-)

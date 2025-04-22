@@ -1,4 +1,4 @@
-package com.github.ahmednmahran.elmtickettracking.features.incidents.ui
+package com.github.ahmednmahran.elmtickettracking.features.incidents.ui.list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -7,7 +7,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 import com.github.ahmednmahran.elmtickettracking.core.common.Result
-import com.github.ahmednmahran.elmtickettracking.features.incidents.data.model.Incident
+import com.github.ahmednmahran.elmtickettracking.features.incidents.ui.list.model.IncidentListState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
@@ -100,9 +100,3 @@ class IncidentListViewModel @Inject constructor(
         }
     }
 }
-
-data class IncidentListState(
-    val incidents: List<Incident> = emptyList(),
-    val isLoading: Boolean = false,
-    val error: String? = null
-)

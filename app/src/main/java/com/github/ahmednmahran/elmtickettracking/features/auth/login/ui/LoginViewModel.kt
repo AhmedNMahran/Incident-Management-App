@@ -9,6 +9,8 @@ import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 import com.github.ahmednmahran.elmtickettracking.core.common.Result
+import com.github.ahmednmahran.elmtickettracking.features.auth.login.ui.model.LoginEvent
+import com.github.ahmednmahran.elmtickettracking.features.auth.login.ui.model.LoginState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
@@ -38,13 +40,4 @@ class LoginViewModel @Inject constructor(
             _state.value = _state.value.copy(isLoading = false)
         }
     }
-}
-
-data class LoginState(
-    val isLoading: Boolean = false
-)
-
-sealed class LoginEvent {
-    object Success : LoginEvent()
-    data class Error(val message: String) : LoginEvent()
 }

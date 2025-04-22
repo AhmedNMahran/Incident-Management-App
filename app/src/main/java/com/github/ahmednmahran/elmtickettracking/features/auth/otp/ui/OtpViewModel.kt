@@ -4,6 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.github.ahmednmahran.elmtickettracking.core.common.Result
 import com.github.ahmednmahran.elmtickettracking.features.auth.domain.AuthRepository
+import com.github.ahmednmahran.elmtickettracking.features.auth.otp.ui.model.OtpEvent
+import com.github.ahmednmahran.elmtickettracking.features.auth.otp.ui.model.OtpState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -13,6 +15,16 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+/**
+ * [OtpViewModel]
+ *
+ * A ViewModel responsible for managing the UI state and business logic related to OTP (One-Time Password) verification.
+ *
+ * This ViewModel interacts with the [AuthRepository] to handle OTP verification and exposes the current state
+ * and events through [StateFlow] and [SharedFlow] respectively.
+ *
+ * @property repository The [AuthRepository] used to perform OTP verification.
+ */
 @HiltViewModel
 class OtpViewModel @Inject constructor(
     private val repository: AuthRepository
@@ -53,17 +65,4 @@ class OtpViewModel @Inject constructor(
     fun clearError() {
         _state.value = _state.value.copy(error = null)
     }
-}
-
-// UI State
-data class OtpState(
-    val isLoading: Boolean = false,
-    val isVerified: Boolean = false,
-    val error: String? = null
-)
-
-// Events
-sealed class OtpEvent {
-    data class VerificationSuccess(val token: String) : OtpEvent()
-    data class VerificationError(val message: String) : OtpEvent()
 }

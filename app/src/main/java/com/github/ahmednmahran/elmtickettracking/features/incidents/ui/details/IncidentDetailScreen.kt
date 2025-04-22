@@ -1,4 +1,4 @@
-package com.github.ahmednmahran.elmtickettracking.features.incidents.ui
+package com.github.ahmednmahran.elmtickettracking.features.incidents.ui.details
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -45,6 +45,7 @@ import com.github.ahmednmahran.elmtickettracking.core.common.FullScreenLoading
 import com.github.ahmednmahran.elmtickettracking.core.common.formatDate
 import com.github.ahmednmahran.elmtickettracking.core.common.getStatusText
 import com.github.ahmednmahran.elmtickettracking.features.incidents.data.model.Incident
+import com.github.ahmednmahran.elmtickettracking.features.incidents.ui.list.StatusChip
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
